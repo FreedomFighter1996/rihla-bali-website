@@ -307,3 +307,19 @@ html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] .sig,ht
 .nav{font-family:'Noto Sans Arabic','Jost',sans-serif;font-weight:500;font-size:15px}
 .sample-note{color:var(--stone)}
 @media (max-width:760px){.logo img{width:120px}}
+
+/* sample WhatsApp chats */
+.chats-k{margin:44px 0 16px;font-family:'Noto Sans Arabic','Jost',sans-serif;font-weight:500;color:var(--gold-text)}
+.chats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.chat{position:relative;border-radius:18px;overflow:hidden;background:#EFE7DE;box-shadow:0 10px 30px rgba(14,59,46,.12);font-family:'Noto Sans Arabic','Jost',sans-serif}
+.chat-top{display:flex;align-items:center;gap:10px;background:#075E54;color:#fff;padding:10px 14px}
+.chat-top img{width:36px;height:36px;border-radius:50%;image-rendering:pixelated}
+.chat-top b{display:block;font-size:15px;font-weight:600}.chat-top small{font-size:12px;opacity:.8}
+.chat-body{padding:12px;display:flex;flex-direction:column;gap:7px;min-height:300px}
+.bub{max-width:84%;padding:7px 10px 18px;border-radius:10px;font-size:14.5px;line-height:1.55;position:relative;box-shadow:0 1px 0 rgba(0,0,0,.08)}
+.bub i{position:absolute;bottom:3px;inset-inline-end:8px;font-style:normal;font-size:10.5px;color:#667781}
+.bub.in{background:#fff;align-self:flex-start}
+.bub.out{background:#D9FDD3;align-self:flex-end}
+.chat-wm{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-24deg);white-space:nowrap;font-weight:600;font-size:26px;letter-spacing:.06em;color:rgba(14,59,46,.16);border:3px solid rgba(14,59,46,.16);padding:6px 18px;border-radius:10px;pointer-events:none}
+@media (max-width:900px){.chats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px}.chat{flex:0 0 86%;scroll-snap-align:center}}
+.chat-tag{display:inline-block;background:rgba(255,255,255,.18);border-radius:999px;padding:0 8px;font-size:11px!important;opacity:1!important}
