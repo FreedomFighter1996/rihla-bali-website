@@ -273,7 +273,8 @@ html[lang="en"] .kicker{font-family:'Jost',sans-serif;font-size:13px}
 .prow p{color:#C9D3CC;font-size:16px}
 .rev{display:flex;flex-direction:column}
 .rev footer{margin-top:auto}
-.rev footer span{white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.rev footer span{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;line-height:1.4}
+.rev footer img{flex:none}
 .rflag{width:28px!important;height:19px!important;object-fit:contain;border-radius:2px!important;border:0!important;margin:0!important;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
 .lang{min-height:44px;padding:10px 16px}
 .wa-fab{inset-inline-start:auto;inset-inline-end:22px}
