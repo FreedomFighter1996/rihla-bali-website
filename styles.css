@@ -258,7 +258,6 @@ h2{text-wrap:balance}
 @media (prefers-reduced-motion:reduce){#trip-star,.tday,.route .seg{transition:none}}
 .shot .trip-map{position:static}
 .quote-line{background:var(--sand);border-radius:12px;padding:14px 18px;margin:-6px 0 26px;font-size:16px;color:var(--emerald)}
-.hidden-ul{display:none}
 .stat b .count{font-size:inherit;color:inherit;font-family:inherit}
 .stat b{unicode-bidi:isolate}
 
