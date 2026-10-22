@@ -2,7 +2,7 @@
   var PHONE = '447902163328';
   var MSG = {
     ar: 'مرحباً رحلة بالي، أرغب بالتخطيط لرحلة إلى بالي.\nالتواريخ: \nعدد المسافرين: \nنوع الرحلة (عائلة / زوجين / أصدقاء): ',
-    en: 'Hello Rihla Bali, I would like to plan a trip to Bali.\nDates: \nNumber of travellers: \nTrip type (family / couple / friends): '
+    en: 'Hi Rihla Bali, I’d love to plan a trip to Bali.\nDates: \nHow many of us: \nTrip type (family / couple / friends): '
   };
   var root = document.documentElement;
   var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-en]'));
@@ -19,7 +19,7 @@
     nodes.forEach(function (n) { n.innerHTML = n.getAttribute(lang === 'en' ? 'data-en' : 'data-ar'); });
     root.lang = lang;
     root.dir = lang === 'en' ? 'ltr' : 'rtl';
-    document.title = lang === 'en' ? 'Rihla Bali | All of Bali’s wow, designed around you' : 'رحلة بالي | Rihla Bali';
+    document.title = lang === 'en' ? 'Rihla Bali | Private luxury trips to Bali' : 'رحلة بالي | Rihla Bali';
     setWa(lang);
     try { localStorage.setItem('rb-lang', lang); } catch (e) {}
   }
